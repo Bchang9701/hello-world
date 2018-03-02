@@ -2,7 +2,6 @@ on adding folder items to this_folder after receiving the_items
 	repeat with each_item in the_items
 		set file_info to info for each_item
 		if kind of file_info is "folder" then
-			display dialog "folder found"
 			set the_folder to each_item
 			repeat until the name extension of file_info is "mp4"
 				tell application "Finder"
