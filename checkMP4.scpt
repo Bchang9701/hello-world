@@ -15,9 +15,9 @@ on adding folder items to this_folder after receiving the_items
 				set old_size to 0
 				set new_size to 1
 				repeat until new_size = old_size
-					set old_size to size of file_info
+					set old_size to size of (info for the_file)
 					delay 1
-					set new_size to size of file_info
+					set new_size to size of (info for the_file)
 				end repeat
 				log "done"
 			end if
